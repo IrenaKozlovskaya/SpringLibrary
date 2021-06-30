@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="dataSourceUtil" class="config.DataSourceUtil"/>
+
+    <bean id="authorRepository" class="repository.impl.AuthorRepositoryImpl">
+        <property name="dataSourceUtil" ref="dataSourceUtil"/>
+    </bean>
+
+    <bean id="authorService" class="service.impl.AuthorServiceImpl">
+        <property name="authorRepository" ref="authorRepository"/>
+    </bean>
+
+    <bean id="bookRepository" class="repository.impl.BookRepositoryImpl">
+        <constructor-arg index="0" ref="dataSourceUtil"/>
+        <constructor-arg index="1" ref="authorRepository"/>
+    </bean>
+
+    <bean id="bookService" class="service.impl.BookServiceImpl">
+        <property name="bookRepository" ref="bookRepository"/>
+    </bean>
+
+    <bean id="genreRepository" class="repository.impl.GenreRepositoryImpl">
+        <property name="dataSourceUtil" ref="dataSourceUtil"/>
+    </bean>
+
+    <bean id="genreService" class="service.impl.GenreServiceImpl">
+        <property name="genreRepository" ref="genreRepository"/>
+    </bean>
+
+</beans>

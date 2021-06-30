@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="booksXSD.xsd">
+    <book>
+        <title>Убить пересмешника</title>
+        <ISBN>213236565</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Харпер Ли</authorName>
+            </firstAuthor>
+        </authors>
+        <genre>
+            <name>роман</name>
+        </genre>
+    </book>
+    <book>
+        <title>Пойди поставь сторожа</title>
+        <ISBN>435435454</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Харпер Ли</authorName>
+            </firstAuthor>
+        </authors>
+        <genre>
+            <name>проза</name>
+        </genre>
+    </book>
+    <book>
+        <title>Старик и море</title>
+        <ISBN>21351654465</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Хэмингуэй</authorName>
+            </firstAuthor>
+        </authors>
+        <genre>
+            <name>повесть</name>
+        </genre>
+    </book>
+    <book>
+        <title>Апокалипсис в искусстве</title>
+        <ISBN>435458484</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Софья Багдасарова</authorName>
+            </firstAuthor>
+        </authors>
+        <genre>
+            <name>искусствоведение</name>
+        </genre>
+    </book>
+    <book>
+        <title>По ком звонит колокол</title>
+        <ISBN>35435435</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Хэмингуэй</authorName>
+            </firstAuthor>
+        </authors>
+        <genre>
+            <name>роман</name>
+        </genre>
+    </book>
+    <book>
+        <title>Методы программирования</title>
+        <ISBN>35436935</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Блинов</authorName>
+            </firstAuthor>
+            <secondAuthor>
+                <authorName>Романов</authorName>
+            </secondAuthor>
+        </authors>
+        <genre>
+            <name>наука</name>
+        </genre>
+    </book>
+    <book>
+        <title>Будет удалено</title>
+        <ISBN>35436932</ISBN>
+        <authors>
+            <firstAuthor>
+                <authorName>Блинов</authorName>
+            </firstAuthor>
+        </authors>
+        <genre>
+            <name>наука</name>
+        </genre>
+    </book>
+</books>
+
+
+
+
+
